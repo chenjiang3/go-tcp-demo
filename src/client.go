@@ -35,15 +35,18 @@ func handle()  {
 
 func main() {
 
-	for i := 0; i < 1; i++ {
+	done := make(chan bool)
 
-		go handle()
+	go handle()
 
+	for true {
 		time.Sleep(time.Second)
 	}
 
-	for true {
+	//for {
+	//	time.Sleep(time.Second)
+	//}
 
-	}
+	<- done
 
 }
