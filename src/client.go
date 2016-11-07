@@ -39,10 +39,6 @@ func main() {
 
 	go handle()
 
-	for true {
-		time.Sleep(time.Second)
-	}
-
 	//for {
 	//	time.Sleep(time.Second)
 	//}
